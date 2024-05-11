@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-// const patientsRouter = require('');
+const patientsRouter = require('./routes/patients');
 const doctorsRouter = require('./routes/doctors');
 const appoinmentsRouter = require('./routes/appointments');
 const app = express();
@@ -28,7 +28,7 @@ connection.on('error',(error) => {
     console.log('MongoDB connection error:', error);
 });
 
-// app.use('/patients',patientsRouter);
+app.use('/patients',patientsRouter);
 app.use('/doctors', doctorsRouter);
 app.use('/appointments', appoinmentsRouter);
 
