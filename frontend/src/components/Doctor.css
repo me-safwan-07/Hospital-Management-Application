@@ -1,0 +1,94 @@
+main-doc-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctors-section {
+    width: 45%;
+    height: 100vh;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.doctor-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transfrom 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    p{
+        margin: 0;
+    }
+
+    button {
+        margin-top: 8px;
+        cursor: pointer;
+    }
+}
+
+.form-sections {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 45%;
+    margin-bottom: 306px;
+    box-shadow: 0 40px 8px rgba(0,0,0,0.1);
+
+    h4 {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 16px;
+    }
+
+    button {
+        align-self: flex-start;
+        padding: 8px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
+
+button {
+    margin-top: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
