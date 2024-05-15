@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Appointments from './components/Appointments';
 import Doctors from './components/Doctors';
-// import Patients from './components/Patients';
+import Patients from './components/Patients.js';
 import './App.css'
 
 const App = () => {
@@ -34,8 +34,8 @@ const App = () => {
         <Routes>
           <Route path='/appointments' element= {<Appointments/>} />
           <Route path="/" element={<Appointments/>} />
-          { <Route path='/doctors' element={<Doctors/>} />
-          /* <Route path='/patients' element={<Patients/>} />*/ }
+          <Route path='/doctors' element={<Doctors/>} />
+          <Route path='/patients' element={<Patients/>} /> 
         </Routes>
       </div>
     </Router>
