@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-// import './Patients.css';
+import './Patients.css';
 import PatientCard from './PatientCard';
 
 const Patients = () => {
