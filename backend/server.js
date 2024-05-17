@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 const patientsRouter = require('./routes/patients');
 const doctorsRouter = require('./routes/doctors');
 const appoinmentsRouter = require('./routes/appointments');
@@ -12,8 +13,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect(
-    'mongodb://localhost:27017/hospital',
+const mongoURL = process.env.MONGODB_URL;
+mongoose.connect(mongoURL,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
